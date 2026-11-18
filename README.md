@@ -4,7 +4,11 @@ A single static page that previews the Thanksgiving Grocery Reward Boost email d
 
 ## What is in this folder
 
-- `index.html`: the whole page. It is self-contained: the email markup, the logo and the Denton font files are embedded inside it. The only outside request is to Google Fonts for Geist and Fraunces.
+- `index.html`: the whole page. It is self-contained: the production email, its eight images, the design mockup, the logo and the Denton font files are embedded inside it. Outside requests go to Google Fonts (Geist, Fraunces) and to cdnjs for the JSZip library used by the zip export.
+
+## Export panel
+
+The page can export the production email for MoEngage: a zip of everything, the HTML alone, a plain-text version, each image, and copy buttons for the HTML, subject line and preheader. Paste the hosted image folder address first and the exported HTML will point at it.
 
 ## Deploying
 
@@ -15,4 +19,4 @@ This is a plain static site with no build step. Any static host works. On GitHub
 - The email shown is an unapproved draft: dates are placeholders and the new copy has not been through compliance review.
 - `index.html` embeds the Denton font files. Check that your Denton licence allows them to be served from a public page or stored in a public repository.
 - This is a browser preview of screen widths and font fallback. It does not reproduce how Gmail, Outlook or Yahoo process email code.
-- The preview shows the design mockup, not the production email build (which uses images for the Denton elements and has no coupon notches).
+- The page opens on the production email. The design mockup view (live fonts, coupon notches) is kept for comparison and is not what gets exported.
